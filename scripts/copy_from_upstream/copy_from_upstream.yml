@@ -187,6 +187,23 @@ kems:
         pqclean_scheme: sntrup857
         pretty_name_full: sntrup857
   -
+    name: dagger
+    default_implementation: clean
+    upstream_location: pqclean
+    schemes:
+      -
+        scheme: lightdagger
+        pqclean_scheme: lightdagger
+        pretty_name_full: LightDagger-KEM
+      -
+        scheme: dagger
+        pqclean_scheme: dagger
+        pretty_name_full: Dagger-KEM
+      -
+        scheme: firedagger
+        pqclean_scheme: firedagger
+        pretty_name_full: FireDagger-KEM
+  -
     name: saber
     default_implementation: clean
     upstream_location: pqclean

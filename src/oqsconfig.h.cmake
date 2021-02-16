@@ -143,6 +143,14 @@
 #cmakedefine OQS_ENABLE_KEM_saber_firesaber 1
 #cmakedefine OQS_ENABLE_KEM_saber_firesaber_avx2 1
 
+#cmakedefine OQS_ENABLE_KEM_DAGGER 1
+#cmakedefine OQS_ENABLE_KEM_dagger_lightdagger 1
+#cmakedefine OQS_ENABLE_KEM_dagger_lightdagger_avx2 1
+#cmakedefine OQS_ENABLE_KEM_dagger_dagger 1
+#cmakedefine OQS_ENABLE_KEM_dagger_dagger_avx2 1
+#cmakedefine OQS_ENABLE_KEM_dagger_firedagger 1
+#cmakedefine OQS_ENABLE_KEM_dagger_firedagger_avx2 1
+
 #cmakedefine OQS_ENABLE_SIG_DILITHIUM 1
 #cmakedefine OQS_ENABLE_SIG_dilithium_2 1
 #cmakedefine OQS_ENABLE_SIG_dilithium_2_avx2 1
