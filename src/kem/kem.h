@@ -106,6 +106,12 @@ extern "C" {
 #define OQS_KEM_alg_saber_saber "Saber-KEM"
 /** Algorithm identifier for FireSaber-KEM KEM. */
 #define OQS_KEM_alg_saber_firesaber "FireSaber-KEM"
+/** Algorithm identifier for LightDagger-KEM KEM. */
+#define OQS_KEM_alg_dagger_lightdagger "LightDagger-KEM"
+/** Algorithm identifier for Dagger-KEM KEM. */
+#define OQS_KEM_alg_dagger_dagger "Dagger-KEM"
+/** Algorithm identifier for FireDagger-KEM KEM. */
+#define OQS_KEM_alg_dagger_firedagger "FireDagger-KEM"
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALG_IDENTIFIER_END
 /** Algorithm identifier for FrodoKEM-640-AES KEM. */
 #define OQS_KEM_alg_frodokem_640_aes "FrodoKEM-640-AES"
