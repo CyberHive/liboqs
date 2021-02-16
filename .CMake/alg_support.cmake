@@ -175,6 +175,21 @@ if(ARCH STREQUAL "x86_64" AND CMAKE_SYSTEM_NAME MATCHES "Linux|Darwin" AND OQS_U
     cmake_dependent_option(OQS_ENABLE_KEM_saber_firesaber_avx2 "" ON "OQS_ENABLE_KEM_saber_firesaber" OFF)
 endif()
 
+option(OQS_ENABLE_KEM_DAGGER "" ON)
+cmake_dependent_option(OQS_ENABLE_KEM_dagger_lightdagger "" ON "OQS_ENABLE_KEM_DAGGER" OFF)
+if(ARCH STREQUAL "x86_64" AND CMAKE_SYSTEM_NAME MATCHES "Linux|Darwin" AND OQS_USE_AVX2_INSTRUCTIONS)
+    cmake_dependent_option(OQS_ENABLE_KEM_dagger_lightdagger_avx2 "" ON "OQS_ENABLE_KEM_dagger_lightdagger" OFF)
+endif()
+cmake_dependent_option(OQS_ENABLE_KEM_dagger_dagger "" ON "OQS_ENABLE_KEM_DAGGER" OFF)
+if(ARCH STREQUAL "x86_64" AND CMAKE_SYSTEM_NAME MATCHES "Linux|Darwin" AND OQS_USE_AVX2_INSTRUCTIONS)
+    cmake_dependent_option(OQS_ENABLE_KEM_dagger_dagger_avx2 "" ON "OQS_ENABLE_KEM_dagger_dagger" OFF)
+endif()
+cmake_dependent_option(OQS_ENABLE_KEM_dagger_firedagger "" ON "OQS_ENABLE_KEM_DAGGER" OFF)
+if(ARCH STREQUAL "x86_64" AND CMAKE_SYSTEM_NAME MATCHES "Linux|Darwin" AND OQS_USE_AVX2_INSTRUCTIONS)
+    cmake_dependent_option(OQS_ENABLE_KEM_dagger_firedagger_avx2 "" ON "OQS_ENABLE_KEM_dagger_firedagger" OFF)
+endif()
+
+
 option(OQS_ENABLE_SIG_DILITHIUM "" ON)
 cmake_dependent_option(OQS_ENABLE_SIG_dilithium_2 "" ON "OQS_ENABLE_SIG_DILITHIUM" OFF)
 if(ARCH STREQUAL "x86_64" AND CMAKE_SYSTEM_NAME MATCHES "Darwin|Linux" AND OQS_USE_AVX2_INSTRUCTIONS AND OQS_USE_POPCNT_INSTRUCTIONS)
